@@ -11,9 +11,29 @@
   </head>
 
   <body>
-    <div class="navbar-lewagon">nav bar</div>
-    <div class="container">
-      <%= yield %>
+    <div class="backgroundgradient" style="color:white">
+      <div class="navbar-lewagon d-flex justify-content-between"><%= link_to "Home", lists_index_path, class: "btn btn-outline" %>
+        <div>
+          <%= link_to "New list", new_list_path, class: "btn btn-outline" %>
+        </div>
+      </div>
+      <%# main section %>
+      <div class="container">
+        <%= yield %>
+      </div>
+      <%# footer %>
+      <div class="footer">
+        <div class="footer-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-copyright">
+          A Saint Production
+        </div>
+      </div>
     </div>
   </body>
 </html>
