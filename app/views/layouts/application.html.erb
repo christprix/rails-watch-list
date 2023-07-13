@@ -12,15 +12,12 @@
 
   <body>
     <div class="backgroundgradient" style="color:white">
-      <div class="navbar-lewagon d-flex justify-content-between"><%= link_to "Home", lists_index_path, class: "btn btn-outline" %>
-        <div>
-          <%= link_to "New list", new_list_path, class: "btn btn-outline" %>
-        </div>
+      <div class="navbar-lewagon d-flex justify-content-end">
+        <%= link_to "Home", lists_index_path, class: "btn btn-outline-light" %>
+        <%= link_to "New list", new_list_path, class: "btn btn-outline-light" %>
       </div>
       <%# main section %>
-      <div class="container">
-        <%= yield %>
-      </div>
+      <%= yield %>
       <%# footer %>
       <div class="footer">
         <div class="footer-links">
